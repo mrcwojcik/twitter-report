@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body ">
+          <div class="container">
+            <h1 class="title">
+              Raport - Twitter users
+            </h1>
+            <h2 class="subtitle">
+              A simple application based on the Twitter API. It allows you to check selected profiles, download data and present them in the form of user rankings based on the number of followers and the number of tweets.            
+            </h2>
+          </div>
+        </div>
+      </section>
+    <div class="columns is-mobile is-centered is-multiline is-vcentered marginElements">
+        <div class="column is-narrow ">
+            <button class="button is-link is-medium " id="followersSort">Sort by number of followers</button>
+        </div>
+        <div class="column is-narrow">
+            <button class="button is-link is-medium" id="tweetSorty">Sort by number of tweets</button>
+        </div>
+    </div>
+    
+    <div class="columns is-mobile is-centered">
+      <div class="column is-5">
+        <input class="input is-medium" type="text" id="searching" placeholder="Enter the nickname of the user you want to find"/>
+      </div>
+    </div>
+    <div class="columns is-mobile is-centered">
+      <table class="table is-bordered is-striped" id="raport">
+      </table>
+    </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Project by <a href="https://github.com/mrcwojcik">Marcin Wójcik</a>. 2020
+        </p>
+      </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/view.js"></script>
+<script src="js/searching.js"></script>
+
+</html>
