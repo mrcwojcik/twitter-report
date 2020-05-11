@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <section class="hero is-info">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Twitter Users
+                </h1>
+                <h2 class="subtitle">
+                    A simple application based on the Twitter API. It allows you to check selected profiles, download
+                    data and present them in the form of user rankings based on the number of followers and the number
+                    of tweets.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="columns is-mobile is-centered marginElements">
+        <div class="column is-half is-offset-one-quarter" id="count">
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div id="sectionWithFile">
+            <div class="columns is-mobile is-centered marginElements">
+                <div class="column is-2 is-narrow">
+                    <p class="subtitle is-5">
+                        Add records from file
+                    </p>
+                </div>
+                <div class="column is-5 is-narrow">
+                    <input class="button is-light is-small" type="file" id="input-file">
+                </div>
+            </div>
+            <div class="columns is-mobile is-centered">
+                <div class="column is-2 is-narrow">
+                    <p class="subtitle is-5">
+                        Check before sending them to database
+                    </p>
+                </div>
+                <div class="column is-5 is-narrow">
+                    <textarea class="textarea is-small" rows="10" id="content-target"></textarea><br />
+                </div>
+            </div>
+            <div class="columns is-mobile is-centered">
+                <div class="column is-2 is-narrow">
+                    <p class="subtitle is-5">
+                        Send records to database
+                    </p>
+                </div>
+                <div class="column is-5 is-narrow">
+                    <button class="button is-primary is-medium" id="sendText">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="sectionWithLists">
+            <div class="columns is-mobile is-centered">
+                <div class="column is-2 is-narrow">
+                    <p class="subtitle is-5">
+                        Type list id
+                    </p>
+                </div>
+                <div class="column is-5 is-narrow">
+                    <input class="input" id="listInput" type="text" placeholder="List id">
+                </div>
+            </div>
+            <div class="columns is-mobile is-centered">
+                <div class="column is-2 is-narrow">
+                    <p class="subtitle is-5">
+                        Get users from list and save to database
+                    </p>
+                </div>
+                <div class="column is-5 is-narrow">
+                    <button class="button is-primary is-medium" id="sendList">Save</button>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-mobile is-centered">
+            <div class="column is-half is-offset-one-quarter">
+                <div id="status">
+                </div>
+            </div>
+        </div>
+        <div class="columns is-mobile is-centered">
+            <div class="column is-2 is-narrow">
+                <p class="subtitle is-5">
+                    Update database
+                </p>
+            </div>
+            <div class="column is-5 is-narrow">
+                <button class="button is-info is-medium" id="updateBase">Update</button>
+            </div>
+        </div>
+        <div class="columns is-mobile is-centered">
+            <div class="column is-2 is-narrow">
+                <p class="subtitle is-5">
+                    Delete non-active users from database
+                </p>
+            </div>
+            <div class="column is-5 is-narrow">
+                <button class="button is-danger is-medium" id="deleteBtn">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer marginElements">
+        <div class="content has-text-centered">
+            <p>
+                Project by <a href="https://github.com/mrcwojcik">Marcin Wójcik</a>. 2020
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
